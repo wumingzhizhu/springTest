@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn21.study.dao.StudyLoginDao">
+    <resultMap type="com.cn21.study.entity.StudyLogin" id="studyLoginResultMap">
+    	<id column="id" jdbcType="INTEGER" property="id" />
+	    <result column="name" jdbcType="VARCHAR" property="name" />
+	    <result column="password" jdbcType="VARCHAR" property="password" />
+    </resultMap>
+    <select id="selectByMap" resultMap="studyLoginResultMap" parameterType="java.util.Map">
+    	select id,name,password from study_login
+    	where name = #{name,jdbcType=VARCHAR}
+    	and password = #{password,jdbcType=VARCHAR}
+    </select>
+    
+    <select id="selectById" resultMap="studyLoginResultMap" parameterType="java.lang.Integer">
+    	select id,name,password from study_login
+    	where id = #{id,jdbcType=INTEGER}
+    </select>
+    
+</mapper>

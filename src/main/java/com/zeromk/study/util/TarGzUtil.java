@@ -1,4 +1,4 @@
-package com.cn21.study.util;
+package com.zeromk.study.util;
 
 import org.apache.tools.tar.TarEntry;
 import org.apache.tools.tar.TarInputStream;
@@ -9,8 +9,6 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
 
 /**
  * @author cbx

@@ -1,4 +1,4 @@
-package com.cn21.study.springBean.lookup;
+package com.zeromk.study.springBean.lookup;
 
 public abstract class GetBeanTest {
 	public void showMe(){

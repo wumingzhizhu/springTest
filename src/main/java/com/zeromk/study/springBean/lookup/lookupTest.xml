@@ -18,14 +18,14 @@
                 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
                 http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
     <!-- 可以动态指定是教师类还是学生类 -->
-    <bean id="getBeanTest" class="com.cn21.study.springBean.lookup.GetBeanTest">
+    <bean id="getBeanTest" class="com.zeromk.study.springBean.lookup.GetBeanTest">
     	<lookup-method name="getBean" bean="student"/>
     </bean>
     <!-- 教师类 -->
-    <bean id="teacher" class="com.cn21.study.springBean.lookup.Teacher">
+    <bean id="teacher" class="com.zeromk.study.springBean.lookup.Teacher">
     </bean>
     <!-- 学生类 -->
-    <bean id="student" class="com.cn21.study.springBean.lookup.Student">
+    <bean id="student" class="com.zeromk.study.springBean.lookup.Student">
     </bean>
     
     

@@ -12,7 +12,7 @@
   
   <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath*:/spring-mvc.xml,classpath*:/spring-context.xml</param-value> <!-- ,classpath*:/applicationContext*.xml -->
+        <param-value>classpath*:/spring-mvc.xml,classpath*:/spring-context.xml,classpath*:/spring-ftp.xml</param-value> <!-- ,classpath*:/applicationContext*.xml -->
     </context-param>
 
     <!-- log4j2-begin -->

@@ -1,4 +1,4 @@
-package com.cn21.study.entity;
+package com.zeromk.study.entity;
 
 public class StudyLogin {
 	

@@ -1,11 +1,10 @@
-package com.cn21.study.dao;
+package com.zeromk.study.dao;
 
 import java.util.List;
 import java.util.Map;
 
+import com.zeromk.study.entity.StudyLogin;
 import org.springframework.stereotype.Service;
-
-import com.cn21.study.entity.StudyLogin;
 
 @Service("studyLoginDao")
 public interface StudyLoginDao {

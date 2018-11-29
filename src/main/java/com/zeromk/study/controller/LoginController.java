@@ -1,4 +1,4 @@
-package com.cn21.study.controller;
+package com.zeromk.study.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,8 +13,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.cn21.study.entity.StudyLogin;
-import com.cn21.study.service.StudyLoginService;
+import com.zeromk.study.entity.StudyLogin;
+import com.zeromk.study.service.StudyLoginService;
 
 @Controller
 public class LoginController {

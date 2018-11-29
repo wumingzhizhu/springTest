@@ -1,10 +1,10 @@
-package com.cn21.study.service;
+package com.zeromk.study.service;
 
 import java.util.List;
 import java.util.Map;
 
 
-import com.cn21.study.entity.StudyLogin;
+import com.zeromk.study.entity.StudyLogin;
 
 public interface StudyLoginService {
 	

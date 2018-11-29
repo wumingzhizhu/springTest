@@ -82,7 +82,7 @@ spring3 + spring mvc + mybatis
 </filter-mapping>
 ```
 
-### 4、zip解压缩
+### 4、zip、rar解压缩
 - pom.xml增加tar解压缩包
 ```
 <dependency>
@@ -92,6 +92,14 @@ spring3 + spring mvc + mybatis
 </dependency>
 ```
 
+### 5、ftp连接池
+```
+<dependency>
+    <groupId>commons-net</groupId>
+    <artifactId>commons-net</artifactId>
+    <version>3.6</version>
+</dependency>
+```
 
 
 

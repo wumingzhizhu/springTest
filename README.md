@@ -101,5 +101,15 @@ spring3 + spring mvc + mybatis
 </dependency>
 ```
 
+### 6、jdbc连接池
+```
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+</dependency>
+```
+
+
 
 

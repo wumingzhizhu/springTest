@@ -1,5 +1,12 @@
+import com.zeromk.study.util.DbUtil;
 import com.zeromk.study.util.TarGzUtil;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  * 测试
@@ -8,6 +15,8 @@ import org.junit.jupiter.api.Test;
  **/
 //@ExtendWith(SpringExtension.class)
 public class JunitTest {
+
+    private static final Logger logger = LoggerFactory.getLogger(JunitTest.class);
 
     @Test
     public void zipTest(){
@@ -41,6 +50,25 @@ public class JunitTest {
         String sourcePath = "/data/jsp/springTest/logs.tar.gz";
         String targetPath = "/data/jsp/";
         TarGzUtil.unGzFile(sourcePath,targetPath);
+
+    }
+
+    @Test
+    public void testDbUtil(){
+        String sql = "select * from study_login";
+        Connection connection = DbUtil.getConnection();
+        try{
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                System.out.println(resultSet.getInt(1));
+                System.out.println(resultSet.getString(2));
+                System.out.println(resultSet.getString(3));
+            }
+        }catch (Exception e){
+            logger.error("testDbUtil exception", e);
+        }
+
 
     }
 
